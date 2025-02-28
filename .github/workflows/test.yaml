@@ -1,0 +1,15 @@
+name: test
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  connect:
+    name: test
+    runs-on: [actuated-4cpu-16gb]
+    steps:
+      - run: |
+          lscpu
