@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  connect:
+  test:
     name: test
     runs-on: [actuated-4cpu-16gb]
     steps:
