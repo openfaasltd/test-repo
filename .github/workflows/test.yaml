@@ -9,7 +9,9 @@ on:
 jobs:
   test:
     name: test
-    runs-on: [actuated-4cpu-16gb]
+    runs-on: [actuated-5cpu-16gb]
     steps:
       - run: |
           lscpu
+          free -h
+
